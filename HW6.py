@@ -36,5 +36,4 @@ chart_centers = alt.Chart(df_centers).mark_point().encode(
     color = alt.value("black"),
     shape = alt.value("diamond"),
 )
-
-chart1 + chart_centers
+st.altair_chart(chart1 + chart_centers)
