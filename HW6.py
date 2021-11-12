@@ -14,7 +14,7 @@ from sklearn.cluster import KMeans
 
 #Question1
 st.title("K-Means clustering")
-it=st.slider("Select the number of iteration",0,1,1000)
+it=st.slider("Select the number of iteration",1,1000)
 
 X, _ = make_blobs(n_samples=1000, centers=5, n_features=2, random_state = 1)
 df = pd.DataFrame(X, columns = list("ab"))
